@@ -2,33 +2,87 @@
 <html lang="en">
 
   <head> 
-    <meta charset="utf-8"> 
+    <meta charset="UTF-8"> 
     <title> Jantel Hines Fav's </title>
-    <meta name="author" content="Jantel Hines">
     <style> 
       body {
         padding-top: 40px;
         padding-bottom: 40px;
+        background-color: blueviolet;
+        display: flex; 
+        justify-content: center; 
       }
-      </style>
+
+      .banner-image {
+        width: 128px; 
+        height: 128px; 
+        object-fit: cover; 
+        border-radius: 128px; 
+      }
+
+      .thumbnail {
+        width: 48px; 
+        height: 48px; 
+        border-radius: 48px; 
+        object-fit: cover; 
+      }
+      
+      .name {
+        color: #e45858;
+        display: flex; 
+        justify-content: center; 
+      }
+
+      .social-icons a {
+        color: #e45858; 
+        text-direction: none; 
+      }
+
+      .link {
+        background-color: #6246ea;
+        display: flex; 
+        align-items: center; 
+        padding: 5px; 
+      }
+
+      .link a {
+        color: #d9376e; 
+        text-direction: none; 
+        text-align: center; 
+        flex-grow: 1; 
+      }
+
+      .items {
+        display: flex; 
+        flex-direction: column;
+        gap: 30px; 
+        max-width: 640px;
+        flex-grow: 1; 
+      }
+
+      .banner {
+        display: flex; 
+        justify-content: center;
+      }
+
+      .social-icons {
+        display: flex; 
+        justify-content: space-around;
+      }
+    </style>
   </head>
 
   <body>
-    <div class="banner">
+    <div class="items">
+      <div class="banner">
     <img src="/thumbnails/CodeAcademyHeadshot.jpeg" alt="Jantel Hines headshot" class="banner-image">
     </div>
-
-    .banner-image {
-      width: 128px; 
-      height: 128px; 
-      object-fit: cover; 
-    }
 
     <div class="name">
       Jantel Hines
     </div>
 
-    <div class="social icons">
+    <div class="social-icons">
       <a href="https://github.com/jantelh/" target="_blank">
         GitHub
        </a>
@@ -39,7 +93,7 @@
     </div>
 
     <div class="link">
-      <img src="thumbnails/crossroads.jpg" class="thumbnails"> 
+      <img class="thumbnails" src="thumbnails/crossroads.jpg"> 
       
       <a target="_blank" href="https://www.youtube.com/watch?v=T0gxL8bxxOk"> 
         It's Okay To Change Your Mind - Mr. Johnson from Abbott Elementary
@@ -47,7 +101,7 @@
     </div>
 
     <div class="link">
-      <img src="thumbnails/headphones.jpg" class="thumbnails">
+      <img class="thumbnails" src="thumbnails/headphones.jpg">
 
       <a target="_blank" href="https://open.spotify.com.playlist/5ymORPBZJ3aG1uV2WcLkyq?">
         Life Is Better With Music - Playlist curated by S.Von 
@@ -55,7 +109,7 @@
     </div>
 
     <div class="link">
-      <img src="thumbnails/wallofbooks.jpg" class="thumbnails">
+      <img class="thumbnails" src="thumbnails/wallofbooks.jpg">
 
       <a target="_blank" href="https://www.goodreads.com/user/show/108536767 tAZswe3re"> 
         Currently Reading - Goodreads Profile 
@@ -63,60 +117,12 @@
     </div>
 
     <div class="link">
-      <img src="thumbnails/girlsx3.jpg">
+      <img class="thumbnails" src="thumbnails/girlsx3.jpg">
 
       <a target="_blank" href="https://builtin.com/women-tech"> 
         Resources for Women in Tech
       </a>
     </div>
-
-    .thumbnails {
-      width: 48px; 
-      height: 48px; 
-      border-radius: 48px; 
-      object-fit: cover; 
-    }
-
-    body {
-      background-color: ; 
-    }
-
-    name {
-      color: #e45858; 
-      display: flex; 
-      justify-content: center; 
-
-    }
-    .banner {
-      display: flex; 
-      justify-content: center; 
-    }
-    .social-icons {
-      color: #e45858; 
-      text-decoration: none; 
-      display: flex; 
-      justify-content: space-around; 
-    }
-
-    .link {
-      background-color: #6246ea; 
-      display: flex; 
-      align-items: center; 
-      padding: 5px; 
-    }
-
-    .link a {
-      color: #d9376e; 
-      text-decoration: none; 
-      text-align: center; 
-      flex-grow: 1; 
-    }
-    .items {
-      display: flex; 
-      flex-direction: column; 
-      gap: 30px; 
-      max-width: 640px; 
-      flex-grow: 1; 
-    }
+  </div>
   </body>
 </html>
